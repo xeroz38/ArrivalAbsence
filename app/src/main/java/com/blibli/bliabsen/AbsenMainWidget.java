@@ -40,7 +40,7 @@ public class AbsenMainWidget extends AppWidgetProvider {
             Calendar c = Calendar.getInstance();
             String currentTime = String.valueOf(c.get(Calendar.HOUR_OF_DAY) + "\n" + c.get(Calendar.MINUTE));
             String currentDate = String.valueOf(c.get(Calendar.DAY_OF_MONTH) + " " + c.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.US) + " " + c.get(Calendar.YEAR));
-            c.setTimeInMillis(System.currentTimeMillis()+28800000);
+            c.setTimeInMillis(System.currentTimeMillis()+32400000);
             String outTime = String.valueOf("Exit at " + c.get(Calendar.HOUR_OF_DAY) + ":" + c.get(Calendar.MINUTE));
             // Save to sharedpref
             context.getSharedPreferences(MY_PREF, Context.MODE_PRIVATE).edit()
